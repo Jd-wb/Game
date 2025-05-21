@@ -8,18 +8,36 @@
 </head>
 <body>
     <div class="game-container">
-        <h1>Flappy Bird</h1>
         <div class="game-info">
-            <p>Score: <span id="score">0</span></p>
-            <p>High Score: <span id="high-score">0</span></p>
+            <div class="score-display">
+                <span id="score">0</span>
+                <span class="score-label">SCORE</span>
+            </div>
+            <div class="high-score-display">
+                <span id="high-score">0</span>
+                <span class="score-label">BEST</span>
+            </div>
         </div>
         <div class="game-area" id="gameArea">
             <div class="bird" id="bird"></div>
             <div class="pipe" id="pipeTop"></div>
             <div class="pipe" id="pipeBottom"></div>
+            <div class="ground"></div>
+            <div class="game-over" id="gameOver">
+                <h2>GAME OVER</h2>
+                <p>Score: <span id="final-score">0</span></p>
+                <p>Best: <span id="final-high-score">0</span></p>
+                <button id="restartBtn">PLAY AGAIN</button>
+            </div>
         </div>
-        <button id="startBtn">Start Game</button>
-        <div class="instructions">Press SPACE or click to flap</div>
+        <div class="start-screen" id="startScreen">
+            <h1>FLAPPY BIRD</h1>
+            <button id="startBtn">START GAME</button>
+            <div class="instructions">
+                <p>Press SPACE or CLICK to flap</p>
+                <p>Avoid the pipes!</p>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
