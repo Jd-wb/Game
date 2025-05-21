@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Flappy Bird</h1>
+        <div class="game-info">
+            <p>Score: <span id="score">0</span></p>
+            <p>High Score: <span id="high-score">0</span></p>
+        </div>
+        <div class="game-area" id="gameArea">
+            <div class="bird" id="bird"></div>
+            <div class="pipe" id="pipeTop"></div>
+            <div class="pipe" id="pipeBottom"></div>
+        </div>
+        <button id="startBtn">Start Game</button>
+        <div class="instructions">Press SPACE or click to flap</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
